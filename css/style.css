@@ -1,0 +1,277 @@
+@font-face {
+    font-family: Seravek-Italic;
+    src: url("../fonts/Seravek-Italic.ttf");
+}
+
+@font-face {
+    font-family: Seravek;
+    src: url("../fonts/Seravek.ttf");
+}
+
+body {
+	background-color: #f8f8f8;
+	margin: 0;
+    padding: 0;
+}
+
+.layout-positioner {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 380px;
+}
+
+p {
+	font-family: sans-serif;
+}
+
+/* Header */
+
+header * {
+    margin: 0;
+    padding: 0;
+   }
+
+header {
+	background-color: #FFB440;
+	background-image: url("../img/logo.png"), url("../img/bg-header.png");
+	background-repeat: no-repeat, no-repeat;
+	background-position: 25px 10px, right;
+	background-size: 80px, 25em;
+}
+
+header .name-descrition {
+    float: left;
+    width: 500px;
+}
+
+header .name-descrition .name-company {
+	margin-top: 25px;
+	padding-left: 120px;
+	font-family: Seravek-Italic;
+	font-size: 2.2em;
+}
+
+header .name-descrition .description-company {
+	padding-left: 110px;
+	font-family: Seravek;
+	font-size: 1em;
+}
+
+header .contacts-header {
+    float: right;
+    width: 200px;
+	font-family: Seravek;
+	letter-spacing: 0.1em;
+	text-align: right;
+	color: #FFF;
+	margin: 1.5em 1em 1.5em 0;
+}
+
+header .contacts-header > .phone {
+	font-size: 1.5em;
+}
+
+header .menu-header {
+	background-color: #FFDE73;
+    clear: both;
+    text-align:left;
+}
+
+/* Стили Меню в Header */
+.menu li {
+	display: inline-block;
+	list-style-type: none;
+	font-variant: small-caps;
+	font-family: Seravek;
+	/*border: solid 1px darkgray;*/
+	padding: 6px 25px 5px;
+	margin: 0 0 0 0;
+}
+
+.menu li a {
+	text-decoration: none;
+    color: #ab7315;
+}
+
+.menu li:hover {
+	color: rgb(255, 222, 115);
+    background-color: #ab7315;
+}
+
+.menu li:hover a {
+	text-decoration: none;
+    color: rgb(255, 222, 115);
+}
+
+.menu li.active {
+	color: rgb(255, 222, 115);
+	background-color: #ab7315;
+}
+
+/* Заголовки */
+
+h1, h2 {
+    color: rgb(255, 95, 0);
+    font-weight: 400;
+	font-family: sans-serif;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+/* Все станицы */
+
+article {
+	padding: 0.5em 1.5em;
+}
+
+a {
+	color:rgb(255, 154, 0);
+}
+
+a:hover {
+	color: rgb(255, 200, 115);
+	/*background: rgb(255, 154, 0);*/
+}
+
+
+/* Главная страница */
+
+div .main-page {
+	text-align: center;
+}
+
+/* Оформление страниц товара */
+
+.prod_brief_descr {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.prod_full_descr {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+ul .prod_charact {
+    color: #505050;
+    font-size: 15px;
+}
+
+.t_prod_charact {
+	border-collapse: collapse
+}
+
+.t_prod_charact tr:nth-child(2n) {
+	background-color: rgba(255, 200, 115, 0.5);
+}
+
+.t_prod_charact tr:nth-child(2n+1) {
+	background-color: rgba(255, 200, 115, 0.1);
+}
+
+.t_prod_charact td {
+	padding: 5px 10px;
+}
+
+ul.prod_charact>li {
+    list-style-type: none;
+    padding-left: 1.5em;
+    background-image: url(../favicon.ico);
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position: left center;
+    line-height: 20px;
+
+}
+
+.prod_price {
+    color:red;
+    font-size: 18px;
+}
+
+.prod_img {
+    width: 180px;
+    border: solid 3px darkgrey;
+}
+
+.prod_img:hover {
+	border: solid 3px #f8f8f8;
+}
+
+/* Оформление форм */
+
+form {
+    color: darkblue;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+fieldset {
+    width: 400px;
+}
+
+input {
+    color: blue;
+    font-size: 15px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 300px;
+    padding: 4px 6px;
+	text-transform: capitalize;
+}
+
+input[type="email"]:focus {
+	color: firebrick;
+	background-color: yellowgreen;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 360px;
+    height: 150px;
+    color: blue;
+    font-size: 15px;
+	text-transform: capitalize;
+}
+
+label span.tag {
+	display: inline-block;
+	width: 42px;
+}
+
+/* Footer */
+
+footer {
+	color: #ab7315;
+	background-color: rgb(255, 222, 115);
+}
+
+footer .copyright {
+	font-size: 0.8em;
+	font-style: italic;
+	text-align: center;
+	padding: 10px 0;
+}
+
+/* ClearFix */
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}

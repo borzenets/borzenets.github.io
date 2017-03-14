@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Контакты - Интернет-магазин MyShop</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="layout-positioner">
+        <div class="name-descrition">
+			<div class="name-company">Coffee-Company</div>
+    		<div class="description-company">Кофе и оборудование для приготовления</div>
+	    </div>
+	    <div class="contacts-header">
+			<div class="phone">+7 812 777-88-15</div>
+        	<div class="adress">
+	        <p>Санкт-Петербург<br>
+	        Загородный пр., д. 37</p>
+	        </div>
+	    </div>
+        <div class="menu-header">
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li class="active">Контакты</li>
+            </ul>
+        </div>
+    </div>
+</header>
+<article>
+    <h2>Интернет-магазин Кофе MyShop</h2>
+    <p><img alt="значок домик" src="img/home.svg" width="17"> Санкт-Петербург, Загородный пр. д. 37</p>
+    <p><img alt="значок телефона" src="img/phone.svg" width="17"> (812) 777-88-15</p>
+    <p><img alt="значок e-mail" src="img/mail.svg" width="17"> mail@coffee-spb.ru</p>
+    <fieldset>
+        <legend>Напишите нам:</legend>
+        <form action="thank_you.php"><br>
+            <label>
+                <span class="tag">Имя:</span>
+                <input type="text" name="name" size="35" placeholder="Иван" autofocus>
+            </label>
+            <br><br>
+            <label>
+                <span class="tag">Mail:</span>
+                <input type="email" name="mail" placeholder="ivan@mail.ru">
+            </label>
+            <br><br>
+            <label>
+				<span class="tag">Тема:</span>
+                <input type="text" name="theme" placeholder="Тема сообщения">
+            </label>
+            <br><br>
+            <label>
+                Пожалуйста введите текст сообщения и нажмите &laquo;Отправить&raquo;.<br><br>
+                <textarea name="message"></textarea>
+            </label>
+            <br>
+            <input type="submit" value="Отправить">
+        </form>
+    </fieldset>
+    <br>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=X0yf0W1L1b7wrblbbRSc9qa-HoQ4pv0T&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+</article>
+<footer>
+    <div class="layout-positioner">
+		<p class="copyright">&copy; MyShop 2017</p>
+    </div>
+</footer>
+</body>
+</html>
