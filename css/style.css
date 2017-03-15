@@ -33,6 +33,9 @@ header * {
 
 header {
 	background-color: #FFB440;
+}
+
+.header-background-img {
 	background-image: url("../img/logo.png"), url("../img/bg-header.png");
 	background-repeat: no-repeat, no-repeat;
 	background-position: 25px 10px, right;
